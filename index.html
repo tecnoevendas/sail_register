@@ -6,19 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="header">
-        <nav> 
-            <div class="nav-links">
-                <ul>
-                    <li><a href="">CONTATO</a></li>
-                    <li><a href="">CADASTRO</a></li>
-                </ul>
-            </div>
-        </nav>
+<section class="header">
+    <nav> 
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">CADASTRO</a></li>
+            </ul>
+        </div>
+        
+
+    </nav>
+
+<div class="text-box">
+    <h1>Consultoria Imobiliária</h1>
+    <p>Buscando Casa, apartamento, novo ou usado?<br>Ou então quer dar um upgrade em sua casa?<br>Descubra a modalidade de financiamento imobiliario ideal para você!
+    </p>
+    <a href="" class="btn_know">Descubra mais</a>
+</div>
          
 
-    </section>
+</section>
+
+
+<!----Javascript toggle menu---->
+<script>
+    var navLinks = document.getElementById("nav-links")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right ="-360px";
+    }
+
+</script>
 </body>
 </html>
