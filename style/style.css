@@ -1,7 +1,19 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
 }
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7)),url(src/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
 body {
     background-color: cadetblue;
 }
